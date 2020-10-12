@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/4454afcecf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skeleton-fontawesome-buttons.css">
+  <title>Book List</title>
+</head>
+<body>
+<div class="container">
+  <h1>Book List</h1>
+  <p id="message"></p>
+  <form id="new-book">
+    <div class="row">
+      <div class="six columns">
+        <label for="input-title">Title</label>
+        <input class="u-full-width" type="text" id="input-title" required>
+      </div>
+      <div class="six columns">
+        <label for="input-author">Author</label>
+        <input class="u-full-width" type="text" id="input-author" required>
+      </div>
+    </div>
+      <label for="input-isbn">ISBN</label>
+      <input class="u-full-width" type="number" id="input-isbn" required>  
+    <input class="button-primary" type="submit" value="Add Book">
+  </form>
+
+  <div>
+    <table id="book-list" class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- <tr>
+          <td>Dune</td>
+          <td>Frank Herbert</td>
+          <td>12345</td>
+          <td><a class="delete-item button button-icon"><i class="fas fa-times"></i></a> </td>          
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+
+  
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

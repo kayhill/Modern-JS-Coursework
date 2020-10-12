@@ -1,0 +1,16 @@
+body {
+  background-color: gray;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+
+h5 {
+  margin-top: 20px;
+}
+
+#loader {
+  margin-top: 50px;
+}

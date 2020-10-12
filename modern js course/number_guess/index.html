@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+  
+  <title>Number Guess</title>
+</head>
+<body>
+  <div class="container">
+    <h1> Number Guess Game</h1>
+    <div id="game">
+      <p>Guess a number from <span id="min-num">1</span> to <span id="max-num">10</span></p>
+      <div class="row">
+        <div class="four columns">
+          <input class="u-full-width" type="number" id="guess-input">
+        </div>
+        <div class="six columns">
+          <button id="guess" class="button-primary">Guess!</button>
+        </div>
+      </div>
+      <p id="message"></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script>confetti.stop()</script>
+  <script src="app.js"></script>
+</body>
+</html>
